@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charSet="utf-8"/>
+    <title>Render</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="300" height="150" style="border:1px solid #d3d3d3;">
+    </canvas>
+    <script src="draw.js" type="text/javascript"></script>
+    <script type="no">
+      var canvas = document.getElementById('canvas');
+      var ctx = canvas.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(100, 75, 50, 0, 2*Math.PI);
+      ctx.stroke();
+
+  ctx.rect(188, 40, 200, 100);
+  ctx.fillStyle = 'red';
+  ctx.shadowColor = '#999';
+  ctx.shadowBlur = 20;
+  ctx.shadowOffsetX = 15;
+  ctx.shadowOffsetY = 15;
+  ctx.fill();
+    </script>
+  </body>
+</html>

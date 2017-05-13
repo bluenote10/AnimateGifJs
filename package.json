@@ -1,0 +1,17 @@
+{
+  "name": "animate-gif-js",
+  "version": "0.1.0",
+  "description": "Creates animated gifs from JS",
+  "main": "index.js",
+  "scripts": {
+    "render": "phantomjs render.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fabian Keller",
+  "license": "MIT",
+  "devDependencies": {
+    "path": "^0.12.7",
+    "phantomjs": "^2.1.7",
+    "process": "^0.11.10"
+  }
+}
